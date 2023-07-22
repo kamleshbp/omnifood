@@ -54,7 +54,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
@@ -104,7 +104,7 @@ body {
 .heading-tertiary {
   font-weight: 700;
   color: #333;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.5px;
 }
 
 .heading-primary {
