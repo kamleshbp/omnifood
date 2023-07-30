@@ -30,7 +30,9 @@
  #eb984e
  #fdf2e9
  #fae5d3
- - Shades: #cf711f
+ - Shades: 
+ #cf711f
+ #45260a
  - Accents:
  - Greys:
  #6f6f6f
@@ -107,6 +109,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -147,6 +153,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -157,6 +164,11 @@ body {
   border-radius: 9px;
 
   transition: all 0.3s;
+
+  /* Only needed for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -181,6 +193,18 @@ body {
   background-color: #fdf2e9;
   /* border: 3px solid #fff; */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  color: #fdf2e9;
+  background-color: #45260a;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  color: #45260a;
+  background-color: #fdf2e9;
 }
 
 .link:link,
@@ -218,6 +242,15 @@ body {
   width: 3rem;
   color: #e67e22;
 }
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+/* Helper classes */
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
